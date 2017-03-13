@@ -1,18 +1,19 @@
-var React = require('react');
-var Router = require('react-router');
+// var React = require('react');
+import React from 'react';
+import Router from 'react-router';
 
-var Profile = React.createClass({
+class Profile extends React.Component {
 
-getInitialState : function() {
-
+getInitialState() {
 	return {
 		notes : [],
 		bio : {},
 		repos : []
 	}
 
-},
-render : function() {
+}
+
+render() {
 	return (
 	<div className="row">
 		<div className="col-md-4">
@@ -29,9 +30,9 @@ render : function() {
 
 	)
 
+}
+
 
 }
 
-});
-
-module.exports = Profile;
+export default Profile
