@@ -1,13 +1,14 @@
-var React = require('react');
+import React from 'react';
 
-var Main = React.createClass({
-  render: function(){
-    return (
-      <div>
-        Hello World my name is babu
-      </div>
-    )
-  }
-});
+class Main extends React.Component {
+	render() {
+		  return (
+			      <div>
+			        Hello World my name is babu
+			      </div>
+    		)
+ 		 }
+	}
 
-module.exports = Main;
+
+export default Main
