@@ -68,8 +68,6 @@ class App extends React.Component {
   	}
 
   	handleRemove(id) {
-  		 // evt.preventDefault()
-  		 console.log("idCCCCCCCCCC");
   		  const updatedDataTable = this.removeData(this.state.datatable, id)
 		  this.setState({datatable: updatedDataTable})
 
@@ -78,7 +76,6 @@ class App extends React.Component {
   	removeData(list,id) {
 
   		const removeIndex = list.findIndex(item => item.id === id)
-  		console.log(removeIndex)
 		  return [
 		    ...list.slice(0, removeIndex),
 		    ...list.slice(removeIndex+1)
@@ -100,10 +97,27 @@ class App extends React.Component {
 
   	}
 
+  	addIdenticalColorCode(list) {
+
+  		list.map(item => {
+  			if(item.status === 'Pending') {
+  				item.color = 'orange'
+  			} else if(item.status === 'Approved') {
+  				item.color = 'green'
+
+  			} else if(item.status === 'Denied') {
+  				item.color = 'red'
+  			}
+
+  		})
+
+  		return list;
+  	} 
+
 	render() {
 		
-		
-		const filteredList = this.filterStatus(this.state.datatable, this.state.currentStatus);
+		const colorCodeList = this.addIdenticalColorCode(this.state.datatable);
+		const filteredList = this.filterStatus(colorCodeList, this.state.currentStatus);
 		 
 		return (
 				<div className="app-container">
