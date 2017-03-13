@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./app/App.js",
+  entry: "./app/index.js",
   output: {
     filename: "public/bundle.js"
   },
@@ -12,6 +12,10 @@ module.exports = {
         query: {
           presets: ['react', 'es2015']
         }
+      },
+       { 
+        test: /\.css$/, 
+        loader: 'style-loader!css-loader'
       }
     ]
   }

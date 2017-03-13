@@ -1,0 +1,26 @@
+#app {
+	margin: 0 auto;
+    width: 992px;
+}
+
+.table-list {
+	    text-align: center;
+}
+
+.table-list ul > li {
+	list-style-type: none;
+}
+
+.status-container {
+
+	text-align: center;
+	padding: 20px 10px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+}
+
+.status {
+
+	width: 70%;
+
+}

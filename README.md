@@ -9,7 +9,10 @@ download and install node js from https://nodejs.org/en/download/
 ```bash
 npm install -g webpack
 npm install
+npm install --save-dev style-loader css-loader
 
 webpack -w
 node server.js
 ```
+
+
