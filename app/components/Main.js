@@ -4,7 +4,7 @@ var Main = React.createClass({
   render: function(){
     return (
       <div>
-        Hello World hi how are you
+        Hello World my name is babu
       </div>
     )
   }
