@@ -1,0 +1,51 @@
+body {
+        
+        font-size: 18px;
+        
+      }
+
+#app {
+	margin: 0 auto;
+    width: 992px;
+}
+
+.table-list {
+	    text-align: center;
+}
+
+.table-list ul > li {
+	list-style-type: none;
+}
+
+.status-container {
+
+	text-align: center;
+	padding: 20px 10px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+}
+
+.status {
+
+	width: 70%;
+
+}
+
+.green {
+	background-color : #90ee90;
+	border: 2px solid #90ee90;
+}
+
+.red {
+	background-color : #ffa07a;
+	border: 2px solid #ffa07a;
+}
+.orange {
+	background-color : #f5deb3;
+	border: 2px solid #f5deb3;
+}
+
+.grey {
+	background-color : #778899;
+	
+}

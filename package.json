@@ -13,15 +13,16 @@
     "react": "*",
     "react-dom": "*",
     "express": "*",
-    "consolidate" : "*",
-    "mustache"  :"*",
+    "consolidate": "*",
+    "mustache": "*",
     "react-router": "*"
-
   },
   "devDependencies": {
     "babel-core": "*",
     "babel-loader": "*",
     "babel-preset-es2015": "*",
-    "babel-preset-react": "*"
+    "babel-preset-react": "*",
+    "css-loader": "^0.27.2",
+    "style-loader": "^0.13.2"
   }
 }
