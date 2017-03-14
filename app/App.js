@@ -1,50 +1,13 @@
 import React from 'react';
 import {TableList} from './components/datatable/TableList';
+import{loadDatas} from './components/service/listservice'
 
 class App extends React.Component {
 
 	constructor() {
 		super()
 		this.state = {
-			datatable : [
-
-				{
-					"id": 1,
-					"title": "Request from Nancy",
-					"updated_at": "2015-08-15 12:27:01 -0600",
-					"created_at": "2015-08-12 08:27:01-0600",
-					"status": "Denied"
-				},
-				{
-					"id": 2,
-					"title": "Request from David",
-					"updated_at": "2015-07-22 11:27:01 -0600",
-					"created_at": "2015-07-15 12:27:01-0600",
-					"status": "Approved"
-				},
-				{
-					"id": 3,
-					"title": "Request from Matt",
-					"updated_at": "2015-07-22 11:27:01 -0600",
-					"created_at": "2015-06-15 13:27:01-0600",
-					"status": "Pending"
-				},
-				{
-					"id": 4,
-					"title": "Request from Perry",
-					"updated_at": "2015-07-15 13:27:01 -0600",
-					"created_at": "2015-07-14 14:27:01-0600",
-					"status": "Pending"
-				},
-				{
-					"id": 5,
-					"title": "Request from Harrison",
-					"updated_at": "2015-08-22 11:27:01 -0600",
-					"created_at": "2015-07-29 15:27:01-0600",
-					"status": "Approved"
-				}
-
-			],
+			datatable : [ ],
 			app_status : [
 				{'id' : 'All', 'name' : 'All'},
 				{'id' : 'Approved', 'name' : 'Approved'}, 
@@ -58,6 +21,12 @@ class App extends React.Component {
 		}
 		this.handleInputChange = this.handleInputChange.bind(this)
 		this.handleRemove = this.handleRemove.bind(this)
+
+	}
+
+	componentDidMount() {
+
+		loadDatas().then(data => this.setState({datatable:data}))
 
 	}
 
