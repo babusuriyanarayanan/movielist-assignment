@@ -52,7 +52,6 @@ class App extends React.Component {
   	}
 
   	filterStatus(list,status) {
-
   		return list.filter(item => {
   			if(status !== 'All') {
   	  				return item.status===status
@@ -84,9 +83,8 @@ class App extends React.Component {
   	} 
 
 	render() {
-		
-		const colorCodeList = this.addIdenticalColorCode(this.state.datatable);
-		const filteredList = this.filterStatus(colorCodeList, this.state.currentStatus);
+	   const colorCodeList = this.addIdenticalColorCode(this.state.datatable);
+		const filteredList = this.filterStatus(this.state.datatable, this.state.currentStatus);
 		 
 		return (
 				<div className="app-container">

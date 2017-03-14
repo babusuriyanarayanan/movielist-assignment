@@ -20,14 +20,14 @@ class Status extends React.Component {
 
 
 	handleInputChange(evt)  {
-		console.log(evt.target.value);
+		
 	    this.setState({
 	      currentStatus: evt.target.value
 	    }) 
   	}
 
 	render() {
-		console.log(this.state.app_status);
+		
 	return (
 	<div className="row">
 		<div className="col-md-12">
