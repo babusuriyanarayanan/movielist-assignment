@@ -1,6 +1,6 @@
 import React from 'react';
 import { TableList } from './components/datatable/TableList';
-import { loadDatas } from './components/service/listservice'
+import { loadDatas } from './components/service/listservice';
 
 class App extends React.Component {
 
