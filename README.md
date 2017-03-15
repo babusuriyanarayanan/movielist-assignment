@@ -27,12 +27,14 @@ node server.js
 
 ```bash
 React JS
-Node JS - data fetch and render DOM
+Node JS - data fetch from http://localhost:3000/data and render the DOM
 Webpack - module loader
 Router - routing purpose
 written in ES6 
 moment js - third party plugin integration
 responsive view in different break points
+items are colored based on their status
+polyfills added to support crossbrowser - firefox, IE Edge, IE11
 ```
 
 
