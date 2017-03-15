@@ -9,12 +9,13 @@
   "author": "Babu Suriyanarayanan <babusuriyanarayanan@gmail.com> (http://babusuriyanarayanan.com)",
   "license": "ISC",
   "dependencies": {
+    "consolidate": "*",
+    "express": "*",
     "history": "*",
+    "moment": "^2.17.1",
+    "mustache": "*",
     "react": "*",
     "react-dom": "*",
-    "express": "*",
-    "consolidate": "*",
-    "mustache": "*",
     "react-router": "*"
   },
   "devDependencies": {
