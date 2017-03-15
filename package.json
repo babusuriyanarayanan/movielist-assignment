@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "consolidate": "*",
+    "es6-promise": "^4.1.0",
     "express": "*",
     "history": "*",
+    "isomorphic-fetch": "^2.2.1",
     "moment": "^2.17.1",
     "mustache": "*",
     "react": "*",
