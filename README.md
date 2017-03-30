@@ -1,4 +1,4 @@
-# babu-marlabs-assignment - https://babusuriyanaryanan@bitbucket.org/babusuriyanaryanan/babu-marlabs-assignment.git
+# qube-assignment - https://babusuriyanaryanan@bitbucket.org/babusuriyanaryanan/qube.git
 
 React JS Assignment
 

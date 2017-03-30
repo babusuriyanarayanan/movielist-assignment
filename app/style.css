@@ -5,6 +5,7 @@ body {
 #app {
     margin: 0 auto;
     width: 992px;
+
 }
 
 .table-list {
@@ -44,3 +45,5 @@ body {
 .grey {
     background-color: #778899;
 }
+
+

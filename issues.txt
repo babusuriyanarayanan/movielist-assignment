@@ -1,2 +1,2 @@
- Cannot read property 'location' of undefined  - reference URL https://github.com/ReactTraining/react-router/blob/v3.0.0/docs/guides/Histories.md
+
 

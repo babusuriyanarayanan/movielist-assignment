@@ -8,3 +8,5 @@ export const loadDatas = () => {
 
     return fetch(baseUrl).then(res => res.json())
 }
+
+
