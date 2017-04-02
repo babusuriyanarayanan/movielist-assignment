@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "start": "node server.js"
   },
   "author": "Babu Suriyanarayanan <babusuriyanarayanan@gmail.com> (http://babusuriyanarayanan.com)",
