@@ -8,11 +8,11 @@ class App extends React.Component {
         super()
         this.state = {
             datatable: [],
-            app_status: [
+            app_year: [
                 { 'id': 'All', 'name': 'All' },
-                { 'id': 'Approved', 'name': 'Approved' },
-                { 'id': 'Denied', 'name': 'Denied' },
-                { 'id': 'Pending', 'name': 'Pending' }
+                { 'id': '2017', 'name': '2017' },
+                { 'id': '2016', 'name': '2016' },
+                { 'id': '2015', 'name': '2015' }
             ],
             currentStatus: 'All'
 
@@ -55,7 +55,7 @@ class App extends React.Component {
     filterStatus(list, status) {
         return list.filter(item => {
                 if (status !== 'All') {
-                    return item.status === status
+                    return item.Year === status
                 } else {
                     return item
                 }
@@ -69,12 +69,12 @@ class App extends React.Component {
     addIdenticalColorCode(list) {
 
         list.map(item => {
-            if (item.status === 'Pending') {
+            if (item.Year === '2015') {
                 item.color = 'orange'
-            } else if (item.status === 'Approved') {
+            } else if (item.Year === '2017') {
                 item.color = 'green'
 
-            } else if (item.status === 'Denied') {
+            } else if (item.Year === '2016') {
                 item.color = 'red'
             }
 
@@ -95,7 +95,7 @@ class App extends React.Component {
             < select name = "status"
             className = "status"
             onChange = { this.handleInputChange } > {
-                this.state.app_status.map(option => ( < option key = { option.id }
+                this.state.app_year.map(option => ( < option key = { option.id }
                     value = { option.id } > { option.name } < /option>
                 ))
 
